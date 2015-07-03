@@ -17,6 +17,5 @@ Well, if you trace the SluggableBehavior.php (path/to/yii/vendor/yiisoft/yii2/be
 >I don't know if this is the best practice to make the sluggableBehavior work for Farsi, but it works for me for now, if i find anything better, i'll let you know.
 
 
-[My Website](http://AlaFalaki.ir)
 
-[My Twitter](http://twitter.com/AlaFalaki)
+You can follow my [My Twitter](http://twitter.com/AlaFalaki) or visit [My Website](http://AlaFalaki.ir) for more updates.
