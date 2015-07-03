@@ -12,7 +12,9 @@ Yii2 uses the intl php extension (transliterate), and since this extension (as f
 Well, if you trace the SluggableBehavior.php (path/to/yii/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php), you found out that it usess inflector helper (path/to/yii/vendor/yiisoft/yii2/helpers/BaseInflector.php) to generate slugs, if you comment out line 425 and make slightly change to linke 426 in BaseInflector.php it should works.
 
 **Simply, you can replace the BaseInflector.php file that i uploaded here, with the file in the framework core.**
->I don't know if this is the best practice to make the sluggableBehavior work for Farsi, but it works for me for now, if i found anything better, i'll let you know.
+>I don't know if this is the best practice to make the sluggableBehavior work for Farsi, but it works for me for now, if i find anything better, i'll let you know.
+
 
 [My Website](http://AlaFalaki.ir)
+
 [My Twitter](http://twitter.com/AlaFalaki)
