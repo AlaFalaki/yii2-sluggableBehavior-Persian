@@ -9,3 +9,5 @@ Yii2 uses the intl php extension (transliterate), and since this extension (as f
 > (if i'm wrong and there is a better way to make intl extension understand Farsi, I'll be glad to hear it)
 
 ###How to fix it?
+Well, if you trace the SluggableBehavior.php (path/to/yii/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php), you found out that it usess inflector helper (path/to/yii/vendor/yiisoft/yii2/helpers/BaseInflector.php) to generate slugs, if you comment out line 425 and make slightly change to linke 426 in BaseInflector.php it should works.
+_Simply, you can replace the BaseInflector.php file that i uploaded here, with the file in the framework core._
