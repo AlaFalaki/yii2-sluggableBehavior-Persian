@@ -1,5 +1,6 @@
 ## Yii2 sluggableBehavior Persian
 a snippet to help persian users, to create persian slugs in Yii2
+
 (If you don't know what the SluggableBehavior is, read [this tutorial](http://code.tutsplus.com/tutorials/programming-with-yii2-sluggable-behavior--cms-23222) or go away :)
 
 ###What is the problem?
