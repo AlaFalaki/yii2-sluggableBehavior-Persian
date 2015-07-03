@@ -340,9 +340,9 @@ class BaseInflector
         $regex = $strict ? '/[A-Z]/' : '/(?<![A-Z])[A-Z]/';
         if ($separator === '_') {
             return trim(strtolower(preg_replace($regex, '_\0', $name)), '_');
-        } else {
-            return trim(strtolower(str_replace('_', $separator, preg_replace($regex, $separator . '\0', $name))), $separator);
         }
+    
+        return trim(strtolower(str_replace('_', $separator, preg_replace($regex, $separator . '\0', $name))), $separator);
     }
 
     /**
@@ -443,9 +443,9 @@ class BaseInflector
     {
         if (static::hasIntl()) {
             return transliterator_transliterate(static::$transliterator, $string);
-        } else {
-            return str_replace(array_keys(static::$transliteration), static::$transliteration, $string);
         }
+
+        return str_replace(array_keys(static::$transliteration), static::$transliteration, $string);
     }
 
     /**
@@ -521,6 +521,7 @@ class BaseInflector
         if ($lastWordConnector === null) {
             $lastWordConnector = $twoWordsConnector;
         }
+
         switch (count($words)) {
             case 0:
                 return '';
