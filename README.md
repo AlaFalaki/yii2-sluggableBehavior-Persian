@@ -10,4 +10,5 @@ Yii2 uses the intl php extension (transliterate), and since this extension (as f
 
 ###How to fix it?
 Well, if you trace the SluggableBehavior.php (path/to/yii/vendor/yiisoft/yii2/behaviors/SluggableBehavior.php), you found out that it usess inflector helper (path/to/yii/vendor/yiisoft/yii2/helpers/BaseInflector.php) to generate slugs, if you comment out line 425 and make slightly change to linke 426 in BaseInflector.php it should works.
+
 **Simply, you can replace the BaseInflector.php file that i uploaded here, with the file in the framework core.**
