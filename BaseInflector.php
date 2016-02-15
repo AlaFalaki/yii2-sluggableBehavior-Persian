@@ -422,7 +422,7 @@ class BaseInflector
      */
     public static function slug($string, $replacement = '-', $lowercase = true)
     {
-        $string = preg_replace('/[^ابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیآ 0-9 ۱۲۳۴۵۶۷۸۹۰ a-zA-Z]/i', '', $string);
+        $string = preg_replace('/[^ابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیآ‌ 0-9 ۱۲۳۴۵۶۷۸۹۰ a-zA-Z]/i', '', $string);
         $string = preg_replace('/[=\s—–-]+/u', $replacement, $string);
         $string = trim($string, $replacement);
 
